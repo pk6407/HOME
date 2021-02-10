@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <!--favicon-->
+    <link rel="shortcut icon"
+        href="https://p7.hiclipart.com/preview/988/211/651/white-coffee-tea-cafe-computer-icons-cup-of-coffee-icon.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/header_footer.css" type="text/css">
+    <link rel="stylesheet" href="./css/Mypage.css" type="text/css">
+    <link rel="stylesheet" href="./css/Mypage_order.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <title>나의주문</title>
+
+
+
+</head>
+
+
+<body>
+    <!-- 로그인 후 index -->
+    <header class="header">
+        <div class="header-align">
+            <div class="header-logo">
+                <a href="/frontend-develop/지현/index_after_login.html"><img src="/frontend/img/logo_white.png" class="logo"></a>
+            </div>
+            <div class="btns-signin-signup">
+                <span><a href="/frontend-develop/Frontend-최종-1차/지현/index.html">로그아웃</a></span>
+                <span><a href="/frontend-develop/Frontend-최종-1차/백종웅/Front/Mypage_order.html">마이페이지</a></span>
+                <span><a href="/frontend-develop/Frontend-최종-1차/제윤지/front/공지사항.html">고객센터</a></span>
+                <span><a href="/frontend-develop/Frontend-최종-1차/은규/Project/front/shopcart.html"><img src="/frontend/img/shoppingcart_white.png" id="shoppingcart"></a></span>
+            </div>
+        </div>
+
+        <div class="shopping">
+            <span id="wholebean"><a href="/frontend-develop/Frontend-최종-1차/서우/wholebean.html">원두</a></span>
+            <span id="stickcoffee"><a href="/frontend-develop/Frontend-최종-1차/서우/stickcoffee.html">스틱커피</a></span>
+            <span id="capsulecoffee"><a href="/frontend-develop/Frontend-최종-1차/서우/capsulecoffee.html">캡슐커피</a></span>
+        </div>
+    </header>
+    <main id="main_container">
+        <div class="size-controll">
+
+            <div class="user_info">
+                <div class="mypage_title">
+
+                    <h1> 마이페이지</h1>
+                </div>
+                <div class="user_info_form"><img
+                        src="https://raw.githubusercontent.com/St4rFi5h/ETC/main/sourcce/article-user-blank.jpg"
+                        alt="blank_user">
+                    이지현(jhlee0912) 님</div>
+            </div>
+
+            <!--------------전체 버튼묶음-------------->
+            <div class="button">
+                <ul>
+                    <a class="card_small" href="/frontend-develop/Frontend-최종-1차/백종웅/Front/Mypage_order.html">
+                        <h3 class="softblack">주문내역</h3>
+                        <p class="card_text">최근 주문내역을 </br>확인하실 수 있습니다.</p>
+                        <p class="card_textlink">확인하기</p>
+                    </a>
+                </ul>
+      
+                <ul>
+                    <a class="card_small" href="/frontend-develop/Frontend-최종-1차/백종웅/Front/Mypage_edit.html">
+                        <h3>회원정보수정</h3>
+                        <p class="card_text">나의 정보를 </br>변경하실 수 있습니다.</p>
+                        <p class="card_textlink">수정하기</p>
+                    </a>
+                </ul>
+      
+                <ul>
+                    <a class="card_small" href="/frontend-develop/Frontend-최종-1차/백종웅/Front/Mypage_qna.html">
+                        <h3 class="softblack">나의문의</h3>
+                        <p class="card_text">나의1:1문의를 </br>확인하실 수 있습니다.</p>
+                        <p class="card_textlink">확인하기</p>
+                    </a>
+                </ul>
+            </div>
+      
+
+        </div>
+        <div class="edit_title">
+            <h1>주문내역</h1>
+        </div>
+
+        <!---------------------테이블시작 --------------------->
+        <div class="main_table">
+            <table class="table table-hover">
+                <form action="" method="POST">
+                    <thead>
+                        <tr>
+                            <th>선택</th>
+                            <th>주문번호</th>
+                            <th>상품번호</th>
+                            <th>상품이미지</th>
+                            <th>상품명</th>
+                            <th>가격</th>
+                            <th>수량</th>
+                            <th>합계</th>
+                        </tr>
+                    </thead>
+
+
+                    <!--------------------- 테이블 각항목 --------------------->
+                    <tr>
+                        <td><input id="checkbox" type="checkbox"></td>
+                        <td>20201217</td>
+                        <td>35435</td>
+                        <td height="0">
+                            <img src="..." alt="..." class="img-thumbnail">
+                        </td>
+                        <td>커피1</td>
+                        <td>7000원</td>
+                        <td>2개</td>
+                        <td>14000원</td>
+                    </tr>
+
+                    <tr>
+                        <td><input id="checkbox" type="checkbox"></td>
+                        <td>20201217</td>
+                        <td>633456</td>
+                        <td height="0">
+                            <img src="..." alt="..." class="img-thumbnail">
+                        </td>
+                        <td>원두</td>
+                        <td>22000원</td>
+                        <td>2개</td>
+                        <td>44000원</td>
+                    </tr>
+
+
+                    <tr>
+                        <td><input id="checkbox" type="checkbox"></td>
+                        <td>20201217</td>
+                        <td>633456</td>
+                        <td height="0">
+                            <img src="..." alt="..." class="img-thumbnail">
+                        </td>
+                        <td>원두</td>
+                        <td>22000원</td>
+                        <td>2개</td>
+                        <td>44000원</td>
+                    </tr>
+
+
+                    <tr>
+                        <td><input id="checkbox" type="checkbox"></td>
+                        <td>20201217</td>
+                        <td>633456</td>
+                        <td height="0">
+                            <img src="..." alt="..." class="img-thumbnail">
+                        </td>
+                        <td>원두</td>
+                        <td>22000원</td>
+                        <td>2개</td>
+                        <td>44000원</td>
+                    </tr>
+
+
+            </table>
+            <!--------------------- 주문취소 버튼 --------------------->
+            <div class="csl-button">
+                <p>
+                    <button type="button" class="btn btn-outline-secondary">주문취소</button>
+                </p>
+            </div>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <ul class="footer-list-box">
+                <li>COFFEESAZO | 대표자: 이지현 | 사업자등록번호 123-45-67890</li>
+                <li>서울특별시 영등포구 선유도2로 57 이레빌딩(구관) 19F</li>
+                <li>책임자: 제윤지 | 개인정보관리책임자: 김은규</li>
+                <li>고객센터 02-1234-5678 | E-mail: customer@coffeesazo.com</li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+
+</body>
+
+</html>

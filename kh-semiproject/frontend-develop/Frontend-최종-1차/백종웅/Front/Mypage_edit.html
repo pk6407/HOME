@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+<!--favicon-->
+<link rel="shortcut icon" href="https://p7.hiclipart.com/preview/988/211/651/white-coffee-tea-cafe-computer-icons-cup-of-coffee-icon.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="/frontend-develop/백종웅/Front/css/addressApi.css" type="text/css">
+  <link rel="stylesheet" href="./css/Mypage.css" type="text/css">
+  <link rel="stylesheet" href="./css/Mypage_edit.css" type="text/css">
+  <link rel="stylesheet" href="./css/header_footer.css" type="text/css">
+  <link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+  <title>내 정보 수정</title>
+
+</head>
+
+
+<body>
+  <!---------------------- 헤더시작 --------------------->
+  <!-- 로그인 후 index -->
+  <header class="header">
+    <div class="header-align">
+        <div class="header-logo">
+            <a href="/frontend-develop/Frontend-최종-1차/지현/index_after_login.html"><img src="/frontend/img/logo_white.png" class="logo"></a>
+        </div>
+        <div class="btns-signin-signup">
+            <span><a href="/frontend-develop/지현/index.html">로그아웃</a></span>
+            <span><a href="/frontend-develop/Frontend-최종-1차/백종웅/Front/Mypage_order.html">마이페이지</a></span>
+            <span><a href="/frontend-develop/Frontend-최종-1차/제윤지/front/공지사항.html">고객센터</a></span>
+            <span><a href="/frontend-develop/Frontend-최종-1차/은규/Project/front/shopcart.html"><img src="/frontend/img/shoppingcart_white.png" id="shoppingcart"></a></span>
+        </div>
+    </div>
+
+    <div class="shopping">
+        <span id="wholebean"><a href="/frontend-develop/Frontend-최종-1차/서우/wholebean.html">원두</a></span>
+        <span id="stickcoffee"><a href="/frontend-develop/Frontend-최종-1차/서우/stickcoffee.html">스틱커피</a></span>
+        <span id="capsulecoffee"><a href="/frontend-develop/Frontend-최종-1차/서우/capsulecoffee.html">캡슐커피</a></span>
+    </div>
+</header>
+  <!--------------------- 메인시작 --------------------->
+  <main id="main_container">
+    <div class="size-controll">
+
+      <div class="user_info">
+          <div class="mypage_title">
+
+              <h1> 마이페이지</h1>
+          </div>
+          <div class="user_info_form"><img
+                  src="https://raw.githubusercontent.com/St4rFi5h/ETC/main/sourcce/article-user-blank.jpg"
+                  alt="blank_user">
+              이지현(jhlee0912) 님</div>
+      </div>
+
+       <!--------------전체 버튼묶음-------------->
+       <div class="button">
+        <ul>
+            <a class="card_small" href="Mypage_order.html">
+                <h3 class="softblack">주문내역</h3>
+                <p class="card_text">최근 주문내역을 </br>확인하실 수 있습니다.</p>
+                <p class="card_textlink">확인하기</p>
+            </a>
+        </ul>
+
+        <ul>
+            <a class="card_small" href="Mypage_edit.html">
+                <h3>회원정보수정</h3>
+                <p class="card_text">나의 정보를 </br>변경하실 수 있습니다.</p>
+                <p class="card_textlink">수정하기</p>
+            </a>
+        </ul>
+
+        <ul>
+            <a class="card_small" href="Mypage_qna.html">
+                <h3 class="softblack">나의문의</h3>
+                <p class="card_text">나의1:1문의를 </br>확인하실 수 있습니다.</p>
+                <p class="card_textlink">확인하기</p>
+            </a>
+        </ul>
+    </div>
+    
+  </div>
+    <div class="form_move">
+      <div class="edit_title">
+        <h1>회원정보수정</h1>
+      </div>
+
+
+      <div class="form-group">
+        <!--------------------- 프로필사진추가 --------------------->
+        <div class="content">
+          <img src="https://raw.githubusercontent.com/St4rFi5h/ETC/main/sourcce/article-user-blank.jpg"
+            alt="blank_user">
+          </br>
+          <label for="exampleInputFile">사진
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="customFile">
+              <label class="custom-file-label" for="customFile"></label>
+            </div>
+          </label>
+        </div>
+        <p>
+
+          <!--------------------- 회원정보 변경 --------------------->
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">이름</label>
+          <div class="col-sm-10">
+            <div class="user_name">이지현</div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">비밀번호</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="colFormLabel" placeholder="특수문자 반드시포함">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">비밀번호 확인</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="colFormLabel" placeholder="비밀번호">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">핸드폰번호</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="colFormLabel" placeholder="핸드폰번호">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">이메일</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="colFormLabel" placeholder="이메일">
+            </br></br>
+          </div>
+        </div>
+        <!--------------------- 주소시작 --------------------->
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">주소</label>
+          <div class="col-sm-10">
+
+            <input type="email" class="form-control" id="postcode" placeholder="우편번호">
+                    <!--------------------- 우편번호 시작 --------------------->
+        <span class="input-group-btn-prepend">
+          <button type="button" class="btn btn-outline-secondary" id="postbutton"
+            onclick="sample4_execDaumPostcode()">우편번호</button>
+        </span>
+        <p>
+          </div>
+
+        </div>
+
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label"></label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="roadAddress" placeholder="도로명주소">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label"></label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="jibunAddress" placeholder="지번주소">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label"></label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="detailAddress" placeholder="상세주소">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label"></label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="extraAddress" placeholder="참고항목">
+
+          </div>
+        </div>
+
+
+          <button type="button" class="btn btn-outline-secondary">취소하기</button>
+          <!-- 확인창 나오는버튼 -->
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            변경하기
+          </button>
+
+          <!-- 확인창 내부 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">변경확인</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                정말로 변경하겠습니까?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">취소</button>
+                <button type="button" class="btn btn-outline-success">저장하기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </p>
+
+
+      </div>
+    </div>
+
+
+
+  </main>
+  <!--------------------- 푸터 --------------------->
+  <footer>
+    <div class="footer">
+        <ul class="footer-list-box">
+            <li>COFFEESAZO | 대표자: 이지현 | 사업자등록번호 123-45-67890</li>
+            <li>서울특별시 영등포구 선유도2로 57 이레빌딩(구관) 19F</li>
+            <li>책임자: 제윤지 | 개인정보관리책임자: 김은규</li>
+            <li>고객센터 02-1234-5678 | E-mail: customer@coffeesazo.com</li>
+        </ul>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+  <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <script src="./js/addressApi.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/popper.js"></script>
+
+</body>
+
+</html>

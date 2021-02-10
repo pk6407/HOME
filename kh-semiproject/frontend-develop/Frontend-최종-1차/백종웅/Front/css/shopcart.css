@@ -1,0 +1,72 @@
+/*
+main{
+    margin-top: 167.89px;
+    width: 2520px;
+    height: 1500px;
+    position: absolute;
+    background-color: lemonchiffon;
+}
+.top-title{
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+.data-result{
+   background-color: white;
+    margin: 0 auto;
+    width: 70%;
+}
+
+
+
+
+.data-result thead{
+
+    background-color: #dcdcdc;
+    border: 2px solid gray;
+}
+.data-result thead th{
+    text-align: center;
+}
+.data-result tbody td {
+    text-align: center;
+    border: 2px solid gray;
+    font-size: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 800;
+}
+.data-result tbody img {
+    width: 100px;
+    height: 150px;
+}
+
+#checkbox{
+    width: 20px;
+    height: 20px;
+}
+.data-result tfoot{
+
+    background-color: #dcdcdc;
+    border: 2px solid gray;
+
+}
+.data-result tfoot td{
+   text-align: center;
+   font-size: 25px;
+   font-family: 'Nanum Myeongjo', serif;
+    font-weight: 800;
+}
+#button-container{
+    text-align: center;
+}
+.remove-button{
+    padding-right: 63.3%;
+
+}
+.check-button{
+    margin-top: 200px;
+}
+.check-button button{
+    width: 300px;
+    height: 50px;
+}

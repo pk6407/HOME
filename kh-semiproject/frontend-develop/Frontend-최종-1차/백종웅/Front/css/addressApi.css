@@ -1,0 +1,35 @@
+ 
+ @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+ /*배송정보 css */
+ html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+ .form-address *{
+    margin-bottom:10px;
+    
+}
+#postcode{
+    width: 100px;
+    padding: 6px 12px;
+}
+
+#postbutton{
+    margin-left: 20px;
+    width: 100px;
+    height: 35px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#roadAddress{
+    width: 400px;
+}
+#jibunAddress{
+    width: 300px;
+}
+#detailAddress{
+    width: 300px;
+}
+#extraAddress{
+    width: 250px;
+}
