@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEESAZO</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"type="text/css">
+    <link rel="stylesheet" href="./커피.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-align">
+            <div class="header-logo">
+                <a href="#"><img src="./img/logo_white.png" class="logo"></a>
+            </div>
+            <div class="btns-signin-signup">
+                <span><a href="#">로그인</a></span>
+                <span><a href="#">회원가입</a></span>
+                <span><a href="#">고객센터</a></span>
+                <span><a href="#"><img src="./img/shoppingcart_white.png" id="shoppingcart"></a></span>
+            </div>
+        </div>
+
+        <div class="shopping">
+            <span id="wholebean"><a href="#">원두</a></span>
+            <!-- onmouseover 써볼지? (javascript)-->
+            <span id="stickcoffee"><a href="#">스틱커피</a></span>
+            <span id="capsulecoffee"><a href="#">캡슐커피</a></span>
+
+        </div>
+    </header>
+    <main id="main-container">
+        <div class="top-result">
+            <div class="main-text"><a href="#">원두</a></div>
+            <div id="sub-text"><a href="#">#묵직한바디감</a></div>
+            <img src="./img/13.png" alt="">
+                    <div class="text-result">
+                        <div class="maintext">클래식 에스프레소 블렌드</div>
+                        <div class="subtext">
+                            <div id="head-text">카사훈 제보</div>
+                            <div id="price">12,500원</div>
+                            <div>에티오피아</div>
+                            <div>용량 : 200g</div>
+                            <div>배송비: 2,500원</div>
+                            <div>배송 기간: 이틀 예정</div>
+                            <div>[영업일 기준 2일 이내 발송]</div>
+                                <p id="number">수량
+                                    <span id="button">
+                                        <input type="text" class="quantity_opt eProductQuantityClass" value="1" product-no="284">
+                                    </span>
+                                    <span>
+                                        <input type="button" id="btnUp" value="+">
+                                        <input type="button" id="btnDown" value="-">
+                                    </span>
+                                </p>
+                                <div id="allprice">총 15,000원</div>
+                                    <div id="allbutton">
+                                        <input type="button" id="btn1" value="장바구니">
+                                        <input type="button" id="btn2" value="바로구매">
+                                    </div>
+                        </div>
+                    </div>
+        
+        </div>
+        <div class="sub-result">
+            <div class="sub-subresult">
+                <div class="COE">에티오피아'카사훈제보'
+                <div class="one-text">Ethiopia'Kasahun Jebo'
+                    <div class="two-text">국가 : ETHIOPIA
+                        <div>지역 : WEGIDA,YIRGACHEFFEE</div>
+                        <div>농장 : KASAHUN JEBO</div>
+                        <div>농장주 : KASAHUN JEBO</div>
+                        <div>재배 고도 : 2,110M</div>
+                        <div>품종 : 74110,WELLISHO,OLDMOTHERTREE</div>
+                        <div>가공방식 : NATURAL</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/13.png" alt="">
+        </div>
+    </main>
+    
+   
+    <footer>
+        <div class="footer">
+            <ul class="footer-list-box">
+                <li>COFFEESAZO | 대표자: 이지현 | 사업자등록번호 123-45-67890</li>
+                <li>서울특별시 영등포구 선유도2로 57 이레빌딩(구관) 19F</li>
+                <li>책임자: 제윤지 | 개인정보관리책임자: 김은규</li>
+                <li>고객센터 02-1234-5678 | E-mail: customer@coffeesazo.com</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
