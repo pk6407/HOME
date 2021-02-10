@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/header-footer.css" type="text/css">
+    <link rel="stylesheet" href="./css/shopcart.css" type="text/css">
+
+    
+    <meta charset="utf-8">
+    <title>장바구니 | COFFEESAZO
+    </title>
+
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+    <header class="header">
+    <div class="header-align">
+        <div class="header-logo">
+            <a href="/frontend-develop/Frontend-최종-1차/지현/index_after_login.html"><img src="/frontend/img/logo_white.png" class="logo"></a>
+        </div>
+        <div class="btns-signin-signup">
+            <span><a href="/frontend-develop/지현/index.html">로그아웃</a></span>
+            <span><a href="/frontend-develop/Frontend-최종-1차/백종웅/Front/Mypage_order.html">마이페이지</a></span>
+            <span><a href="/frontend-develop/Frontend-최종-1차/제윤지/front/공지사항.html">고객센터</a></span>
+            <span><a href="/frontend-develop/Frontend-최종-1차/은규/Project/front/shopcart.html"><img src="/frontend/img/shoppingcart_white.png" id="shoppingcart"></a></span>
+        </div>
+    </div>
+
+    <div class="shopping">
+        <span id="wholebean"><a href="/frontend-develop/Frontend-최종-1차/서우/wholebean.html">원두</a></span>
+        <span id="stickcoffee"><a href="/frontend-develop/Frontend-최종-1차/서우/stickcoffee.html">스틱커피</a></span>
+        <span id="capsulecoffee"><a href="/frontend-develop/Frontend-최종-1차/서우/capsulecoffee.html">캡슐커피</a></span>
+    </div>
+</header>
+
+
+    <main>
+
+
+        <div class="top-title">
+            <h1>장바구니</h1>
+        </div>
+        <table class="data-result">
+            <form action="" method="POST">
+                <thead>
+                    <tr>
+
+                        <th>선택</th>
+                        <th>상품번호</th>
+                        <th>상품이미지</th>
+                        <th>상품명</th>
+                        <th>가격</th>
+                        <th>수량</th>
+                        <th>합계</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><input id="checkbox" type="checkbox"></td>
+                        <td>1231415</td>
+                        <td height="0">
+                            <div style="height:100%"><img src="./img/4-1.png" height="100%"></div>
+                        </td>
+                        <td>상품명</td>
+                        <td>10000원</td>
+                        <td>5개</td>
+                        <td>50000원</td>
+                    </tr>
+                    <tr>
+                        <td><input id="checkbox" type="checkbox"></td>
+                        <td>1231415</td>
+                        <td height="0">
+                            <div style="height:100%"><img src="./img/4-1.png" height="100%"></div>
+                        </td>
+                        <td>상품명</td>
+                        <td>10000원</td>
+                        <td>5개</td>
+                        <td>50000원</td>
+                    </tr>
+
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="6"></td>
+                        <td>총가격:15000000만원</td>
+                    </tr>
+                </tfoot>
+        </table>
+        <div id="button-container">
+
+            <div class="remove-button">
+                
+                <!--알랏1-->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    선택삭제
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">선택삭제</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                정말 삭제하시겠습니까?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                                <button type="button" class="btn btn-primary">삭제</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------->
+                
+                <!--알랏2-->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    모두삭제
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">모두삭제</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                정말 삭제하시겠습니까?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                                <button type="button" class="btn btn-primary">삭제</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------->
+            </div>
+            <div class="check-button">
+                <button type="button" onclick= " location.href = 'payment.html'" class="btn btn-outline-success">구매하기</button>
+                <button type="button" class="btn btn-outline-secondary">쇼핑계속하기</button>
+
+
+
+            </div>
+        </div>
+
+        </form>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <ul class="footer-list-box">
+                <li>COFFEESAZO | 대표자: 이지현 | 사업자등록번호 123-45-67890</li>
+                <li>서울특별시 영등포구 선유도2로 57 이레빌딩(구관) 19F</li>
+                <li>책임자: 제윤지 | 개인정보관리책임자: 김은규</li>
+                <li>고객센터 02-1234-5678 | E-mail: customer@coffeesazo.com</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

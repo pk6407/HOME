@@ -1,0 +1,121 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+title, header, footer, h1 {  /*결제창 내부 글씨체*/
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.4px;
+    font-family: 'Nanum Myeongjo', serif;
+    }
+    
+main{
+    margin-top: 167.89px;
+    width: 100%;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    position: relative;
+    min-height: 100%;
+}
+    
+    
+    
+.top-title{
+    margin-top: 300px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.data-result{
+   background-color: white;
+    margin: 0 auto;
+    width: 70%;
+}
+    
+    
+   
+
+.data-result thead{
+    font-size: 20px;
+    border-bottom: 2px solid gray;
+    
+}
+.data-result thead th{
+    text-align: center;
+}
+.data-result tbody td {
+    text-align: center;
+    border-bottom: 1px solid #dcdcdc;
+    font-size: 20px;
+    
+    
+}
+.data-result tbody img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #dcdcdc; 
+}
+
+#checkbox{
+    width: 20px;
+    height: 20px;
+}
+.data-result tfoot{
+    border-top: 2px solid gray;
+   
+   
+    
+}
+.data-result tfoot td{
+   height: 70px;
+    text-align: center;
+   font-size: 25px;
+}
+   
+
+#button-container{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.remove-button{
+    padding-right: 63.3%;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+
+.check-button button{
+    width: 220px;
+    height: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+
+
+    
+
+
+
+    
+    
+    
+
+
+    
+
+    
+    
+    
+    
+    
+
+
+
+    
+    
+   
+    
+    
+    
+
+    
+    
+    
