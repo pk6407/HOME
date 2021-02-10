@@ -1,0 +1,61 @@
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+/*font-family: 'Nanum Myeongjo', serif;*/
+.edit_title, h3, p {  /*마이페이지 내부 글씨체*/
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.4px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  .table , .justify-content-center{
+
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  .my-order {
+    cursor: pointer;
+}
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+  title, header, footer, h1
+{
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+main{
+ margin-top:200px ;
+ width: 100%;
+ margin: 200px auto;
+
+}
+
+.edit_title{   /* 제목 밑줄 띄기*/
+ text-align: center;
+ margin-bottom: 40px;
+
+
+}
+
+
+h1 {  /* 제목 밑줄*/
+    border-bottom: 2px solid #000000;
+    padding-bottom: 20px;
+  }
+
+.csl-button{
+    text-align: right;
+}
+
+
+nav{
+    text-align: center;
+}
+
+
+a.page-link{
+    text-align: center;
+}

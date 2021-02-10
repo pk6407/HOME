@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            
+        }
+        
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+
+        }
+
+        p {
+            margin: 0;
+        }
+        ul, li {
+            list-style: none;
+        }
+
+        h1 {
+            font-family: 'Nanum Myeongjo', serif;
+            text-align: center;
+            font-weight: 300;
+        }
+        /* header 상단 고정*/
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            z-index: 1000;
+            font-family: 'Nanum Myeongjo', serif;
+        }
+        
+        .header-logo {
+            background-color:#4d2600;
+        }
+        
+        .logo {
+            display: block;
+            width: 400px;
+            margin: 0 auto;
+            padding: 0;
+        } 
+       /* 로그인 회원가입 고객센터*/
+       .btns-signin-signup {
+            position: absolute;
+            right: 5px;
+            top: 45px;
+            width: 400px;
+            height: 30px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    
+        .btns-signin-signup a {
+            margin: 10px;
+            font-size: 16px;
+            color: white;
+        }
+
+        #shoppingcart {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            top: -5px;
+            left: -8px;
+        }
+        .shopping {
+            margin: 0 auto;
+            margin: 20px 0 20px 0;
+            text-align: center;
+            
+        }
+
+        .shopping > span {
+            margin: 0 30px 0 30px;
+        }
+
+        
+        .shopping a:hover {
+            font-weight: bold;
+            transition: all 0.2s ease;
+            color: #4d2600;
+            
+        }
+        /*header 끝!*/
+
+        .section {
+            position: relative;
+            min-height: 100%;
+            margin: 0 auto;
+            width: 500px;
+            margin-top: 180px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .form-container {
+            max-width: 400px;
+            height: 140vh;
+            padding: 0 45px 100px 45px;
+            
+        }
+
+        .sign-up-header{
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .form-box-field {
+            margin-bottom: 1rem;
+        }
+        
+        .form-box-field > .form-box-field-input {
+            width: 100%;
+            height: 50px;
+            outline: none;
+            border: 1px solid #e5e5e5;
+            font-size: 0.8rem;
+            text-indent: 0.5rem;
+        }
+
+        .postcode input,
+        .address_detail input  {
+                width: 49.59%;
+                height: 50px;
+                outline: none;
+                border: 1px solid #e5e5e5;
+                font-size: 0.8rem;
+                text-indent: 0.5rem;
+                margin: 0 auto;
+                
+        }
+        
+        #sample6_address {
+            width: 100%;
+            height: 50px;
+            outline: none;
+            border: 1px solid #e5e5e5;
+            font-size: 0.8rem;
+            text-indent: 0.5rem;
+            
+        }
+        
+        #sample6_postcode_search:hover {
+            cursor: pointer;
+        }
+        .form-box-field-input::placeholder {
+            color: #cccccc;
+        }
+
+        .form-box-field-input:focus {
+            border-color: #aaaaaa;
+            transition: border 0.3s ease-in-out;/*!*/
+        }
+
+        .field-required {
+            display: inline-block;
+            width: 3px;
+            height: 3px;
+            background-color: red;
+            text-indent: -99999999999999px;
+            border-radius: 100%;
+        }
+
+        .warn-info {
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: red;
+            /*js 이용하여 입력되지 않았을 시 보이게 하기*/
+            display: none;
+        }
+
+        .form-box-field > label {
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+
+        .terms-box {
+            font-size: 14pt;
+            margin-bottom: 20px;
+        }
+
+        .terms-box input {
+            display: block;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+            position: absolute;
+        }
+
+        .terms-box label {
+            padding-left: 1.5rem;
+            position: relative;
+            cursor: pointer;
+            user-select: none;
+            font-size: 14px;
+        }
+
+        .terms-box label::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            border-radius: 100%;
+            border: 1px solid #cccccc;
+            background-color: #f1f1f1;
+        }
+
+        .terms-box input:checked ~ label::before {
+            background-color: #4d2600;
+            border-color: #4d2600;
+        }
+
+        .terms-box label::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 6px;
+            height: 3px;
+            border-left: 1px solid white;
+            border-bottom: 1px solid white;
+            top: 7px;
+            left: 7px;
+            transform: rotate(-45deg);
+            visibility: hidden;
+        }
+
+        .terms-box input:checked ~ label::after {
+            visibility: visible;
+        }
+
+
+        .terms-box a {
+            float: right;
+            font-size: 10pt;
+            margin-top: 5px;
+
+        }
+
+        .signup-btn {
+            width: 100%;
+            height: 60px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 0;
+            border: 0;
+            background-color: #4d2600;
+            color: white;
+            font-size: 1rem;
+            font-weight: 800;
+            
+        }
+
+        .signup-btn:hover {
+            background-color: burlywood;
+            transition: 0.3s;
+            cursor: pointer;
+            
+        }
+   
+        /*footer 하단 고정*/
+        footer {
+            position: absolute;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #4d2600;
+            padding: 5px;
+            padding-top: 20px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            font-family: 'Nanum Myeongjo', serif;
+        }
+
+        .footer li {
+            margin-bottom: 10px;
+        }

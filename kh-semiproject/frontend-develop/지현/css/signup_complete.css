@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            
+        }
+        
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        p {
+            margin: 0;
+        }
+        ul, li {
+            list-style: none;
+        }
+
+        h1 {
+            font-family: 'Nanum Myeongjo', serif;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        /* header 상단 고정*/
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            z-index: 1000;
+            font-family: 'Nanum Myeongjo', serif;
+        }
+        
+        .header-logo {
+            background-color:#4d2600;
+        }
+        
+        .logo {
+            display: block;
+            width: 400px;
+            margin: 0 auto;
+            padding: 0;
+        } 
+         /* 로그인 회원가입 고객센터*/
+       .btns-signin-signup {
+            position: absolute;
+            right: 5px;
+            top: 45px;
+            width: 400px;
+            height: 30px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    
+        .btns-signin-signup a {
+            margin: 10px;
+            font-size: 16px;
+            color: white;
+        }
+
+        #shoppingcart {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            top: -5px;
+            left: -8px;
+        }
+
+        .shopping {
+            margin: 0 auto;
+            margin: 20px 0 20px 0;
+            text-align: center;
+            
+        }
+
+        .shopping > span {
+            margin: 0 30px 0 30px;
+        }
+
+        .shopping a:hover {
+            font-weight: bold;
+            transition: all 0.2s ease;
+            color: #4d2600;
+            
+        }
+        /*header 끝!*/
+        .section {
+            min-height: 100%;
+            margin: 0 auto;
+            margin-top: 180px;
+			width: 500px;
+			margin-bottom:0;
+        }
+
+        .welcome-message h1 {
+            position: relative;
+            margin-top: 250px;
+            font-weight: 600;
+        }
+        .youridis {
+            width: 100%;
+            padding: 70px;
+            text-align: center;
+        }
+
+        .youridis span > b {
+            font-weight: 600;
+        }
+
+        .signin-and-gotomain {
+            margin: 20px 0 20px 0;
+        }
+        
+        .signin-and-gotomain input {
+            width: 49.44%;
+            height: 50px;
+            background-color: #4d2600;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            font-weight: bold;
+        }
+
+        .signin-and-gotomain input:hover {
+            background-color: burlywood;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        
+        /*footer 하단 고정*/
+        footer {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #4d2600;
+            padding: 5px;
+            padding-top: 20px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            font-family: 'Nanum Myeongjo', serif;
+        }
+
+        .footer li {
+            margin-bottom: 10px;
+        }

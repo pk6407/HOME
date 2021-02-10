@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEESAZO</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <!--favicon-->
+    <link rel="shortcut icon"
+        href="https://p7.hiclipart.com/preview/988/211/651/white-coffee-tea-cafe-computer-icons-cup-of-coffee-icon.jpg">
+</head>
+
+<body>
+    <!-- 로그인 후 index -->
+    <header class="header">
+        <div class="header-align">
+            <div class="header-logo">
+                <a href="/frontend-develop/Frontend-최종-1차/지현/index_after_login.html"><img src="/frontend/img/logo_white.png" class="logo"></a>
+            </div>
+            <div class="btns-signin-signup">
+                <span><a href="/frontend-develop/Frontend-최종-1차/지현/index.html">로그아웃</a></span>
+                <span><a href="/frontend-develop/Frontend-최종-1차/백종웅/Front/Mypage_order.html">마이페이지</a></span>
+                <span><a href="/frontend-develop/Frontend-최종-1차/제윤지/front/공지사항.html">고객센터</a></span>
+                <span><a href="/frontend-develop/Frontend-최종-1차/은규/Project/front/shopcart.html"><img src="/frontend/img/shoppingcart_white.png" id="shoppingcart"></a></span>
+            </div>
+        </div>
+
+        <div class="shopping">
+            <span id="wholebean"><a href="/frontend-develop/Frontend-최종-1차/서우/wholebean.html">원두</a></span>
+            <span id="stickcoffee"><a href="/frontend-develop/Frontend-최종-1차/서우/stickcoffee.html">스틱커피</a></span>
+            <span id="capsulecoffee"><a href="/frontend-develop/Frontend-최종-1차/서우/capsulecoffee.html">캡슐커피</a></span>
+        </div>
+    </header>
+    <div class="section">
+        <div class='main'>
+            <div class="silder-cover"></div>
+            <div class="slider" id="main-slider">
+                <!-- outermost container element -->
+
+                <div class="slider-wrapper">
+                    <!-- innermost wrapper element -->
+                    <img src="./img/7-1.png" alt="First" class="slide" /><!-- slides -->
+                    <img src="./img/4-1.png" alt="Second" class="slide" />
+                    <img src="./img/5.png" alt="Third" class="slide" />
+                </div>
+            </div>
+        </div>
+
+        <div class='hashtag'>
+            <div class="title">
+                <h2>키워드로 상품을 찾아보세요!</h2>
+            </div>
+            <div class="hashtag-box">
+                <div class="tag"><a href='/frontend-develop/Frontend-최종-1차/서우/wholebean.html'>#풍부한산미</a></div>
+                <div class="tag"><a href='/frontend-develop/Frontend-최종-1차/서우/wholebean.html#tag_body'>#묵직한바디감</a></div>
+                <div class="tag"><a href='/frontend-develop/Frontend-최종-1차/서우/wholebean.html#tag_latin'>#중남미원두</a></div>
+                <div class="tag"><a href='/frontend-develop/Frontend-최종-1차/서우/wholebean.html#tag_africa'>#아프리카원두</a></div>
+            </div>
+            <div class="hashtag-box">
+                <div class="tag"><a href='/frontend-develop/Frontend-최종-1차/서우/stickcoffee.html'>#쉽고간편한</a></div>
+                <div class="tag"><a href='/frontend-develop/Frontend-최종-1차/서우/capsulecoffee.html'>#룽고</a></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <ul class="footer-list-box">
+                <li>COFFEESAZO | 대표자: 이지현 | 사업자등록번호 123-45-67890</li>
+                <li>서울특별시 영등포구 선유도2로 57 이레빌딩(구관) 19F</li>
+                <li>책임자: 제윤지 | 개인정보관리책임자: 김은규</li>
+                <li>고객센터 02-1234-5678 | E-mail: customer@coffeesazo.com</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        (function () {
+
+            function Slideshow(element) {
+                this.el = document.querySelector(element);
+                this.init();
+            }
+
+            Slideshow.prototype = {
+                init: function () {
+                    this.wrapper = this.el.querySelector(".slider-wrapper");
+                    this.slides = this.el.querySelectorAll(".slide");
+                    this.previous = this.el.querySelector(".slider-previous");
+                    this.next = this.el.querySelector(".slider-next");
+                    this.index = 0;
+                    this.total = this.slides.length;
+                    this.timer = null;
+
+                    this.action();
+                    this.stopStart();
+                },
+                _slideTo: function (slide) {
+                    var currentSlide = this.slides[slide];
+                    currentSlide.style.opacity = 1;
+
+                    for (var i = 0; i < this.slides.length; i++) {
+                        var slide = this.slides[i];
+                        if (slide !== currentSlide) {
+                            slide.style.opacity = 0;
+                        }
+                    }
+                },
+                action: function () {
+                    var self = this;
+                    self.timer = setInterval(function () {
+                        self.index++;
+                        if (self.index == self.slides.length) {
+                            self.index = 0;
+                        }
+                        self._slideTo(self.index);
+
+                    }, 4000);
+                },
+                stopStart: function () {
+                    var self = this;
+                    self.el.addEventListener("mouseover", function () {
+                        clearInterval(self.timer);
+                        self.timer = null;
+
+                    }, false);
+                    self.el.addEventListener("mouseout", function () {
+                        self.action();
+
+                    }, false);
+                }
+
+            };
+
+            document.addEventListener("DOMContentLoaded", function () {
+                var slider = new Slideshow("#main-slider");
+
+            });
+
+
+        })();
+    </script>
+</body>
+
+</html>

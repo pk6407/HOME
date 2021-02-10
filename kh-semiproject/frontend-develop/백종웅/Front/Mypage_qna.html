@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <!--favicon-->
+    <link rel="shortcut icon" href="https://p7.hiclipart.com/preview/988/211/651/white-coffee-tea-cafe-computer-icons-cup-of-coffee-icon.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/header_footer.css" type="text/css">
+    <link rel="stylesheet" href="./css/Mypage.css" type="text/css">
+    <link rel="stylesheet" href="./css/Mypage_qna.css" type="text/css">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <title>나의문의 | COFFEESAZO</title>
+
+
+
+
+
+</head>
+
+
+<body>
+    <!---------------------헤더 시작 --------------------->
+    <header class="header">
+        <div class="header-align">
+            <div class="header-logo">
+                <a href="/frontend-develop/Frontend-최종-1차/index.html"><img src="./img/logo_white.png" class="logo"></a>
+            </div>
+            <div class="btns-signin-signup">
+                <span><a href="/frontend-develop/Frontend-최종-1차/민영/COFFEESAZO/login2.html">로그인</a></span>
+                <span><a href="/frontend-develop/Frontend-최종-1차/지현/signup.html">회원가입</a></span>
+                <span><a href="/frontend-develop/제윤지/front/공지사항.html">고객센터</a></span>
+                <span><a href="#"><img src="./img/shoppingcart_white.png" id="shoppingcart"></a></span>
+            </div>
+        </div>
+
+        <div class="shopping">
+            <span id="wholebean"><a href="/frontend-develop/Frontend-최종-1차/서우/wholebean.html">원두</a></span>
+            <!-- onmouseover 써볼지? (javascript)-->
+            <span id="stickcoffee"><a href="/frontend-develop/Frontend-최종-1차/서우/stickcoffee.html">스틱커피</a></span>
+            <span id="capsulecoffee"><a href="/frontend-develop/Frontend-최종-1차/서우/capsulecoffee.html">캡슐커피</a></span>
+
+        </div>
+    </header>
+    <!---------------------메인 시작 --------------------->
+    <main>
+        <div class="size-controll">
+
+            <div class="user_info">
+                <div class="mypage_title">
+
+                    <h1> 마이페이지</h1>
+                </div>
+                <div class="user_info_form"><img
+                        src="https://raw.githubusercontent.com/St4rFi5h/ETC/main/sourcce/article-user-blank.jpg"
+                        alt="blank_user">
+                    이지현(jhlee0912) 님</div>
+            </div>
+
+            <!--------------전체 버튼묶음-------------->
+            <div class="button">
+                <ul>
+                    <a class="card_small" href="Mypage_order.html">
+                        <h3 class="softblack">주문내역</h3>
+                        <p class="card_text">최근 주문내역을 </br>확인하실 수 있습니다.</p>
+                        <p class="card_textlink">확인하기</p>
+                    </a>
+                </ul>
+      
+                <ul>
+                    <a class="card_small" href="Mypage_edit.html">
+                        <h3>회원정보수정</h3>
+                        <p class="card_text">나의 정보를 </br>변경하실 수 있습니다.</p>
+                        <p class="card_textlink">수정하기</p>
+                    </a>
+                </ul>
+      
+                <ul>
+                    <a class="card_small" href="Mypage_qna.html">
+                        <h3 class="softblack">나의문의</h3>
+                        <p class="card_text">나의1:1문의를 </br>확인하실 수 있습니다.</p>
+                        <p class="card_textlink">확인하기</p>
+                    </a>
+                </ul>
+            </div>
+      
+
+
+        <div class="edit_title">
+            <h1>나의문의 </h1>
+        </div>
+
+        <!---------------------테이블 시작 --------------------->
+        <div class="main_table">
+            <table class="table table-hover">
+                <form action="" method="POST">
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>답변상태</th>
+                            <th>분류</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성일</th>
+
+
+                        </tr>
+                    </thead>
+
+
+                    <!--------------------- 글 시작 --------------------->
+                    <tr class="my-q" onclick="location.href='index.html' ">
+   
+                        
+                        
+                        <td>2</td>
+                        <td>대기</td>
+                        <td>상품질문</td>
+                        <td>커피색이 갈색이에요...</td>
+                        <td>크쿠루삥뽕</td>
+                        <td>2020-12-17</td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td>1</td>
+                        <td>답변완료</td>
+                        <td>배송질문</td>
+                        <td>로켓배송인가요?</td>
+                        <td>루밍뽕</td>
+                        <td>2020-12-16</td>
+
+
+                    </tr>
+
+
+            </table>
+            <!--------------------- 글쓰기버튼 --------------------->
+            <div class="csl-button">
+                <p>
+                    <button type="button" class="btn btn-outline-secondary">글쓰기</button>
+                </p>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+            </div>
+    </main>
+</body>
+<!---------------------푸터 시작 --------------------->
+<footer>
+    <div class="footer">
+        <ul class="footer-list-box">
+            <li>COFFEESAZO | 대표자: 이지현 | 사업자등록번호 123-45-67890</li>
+            <li>서울특별시 영등포구 선유도2로 57 이레빌딩(구관) 19F</li>
+            <li>책임자: 제윤지 | 개인정보관리책임자: 김은규</li>
+            <li>고객센터 02-1234-5678 | E-mail: customer@coffeesazo.com</li>
+        </ul>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/popper.min.js"></script>
+
+</body>
+
+</html>
