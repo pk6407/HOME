@@ -1,0 +1,28 @@
+ .form-address *{
+    margin-bottom:10px;
+}
+#postcode{
+    width: 80px;
+}
+
+#postbutton{
+ margin-left: 10px;
+ margin-top: 7px;   
+ width: 100px;
+    height: 35px;
+}
+#roadAddress{
+    width: 400px;
+}
+#jibunAddress{
+    width: 300px;
+}
+#detailAddress{
+    width: 300px;
+}
+#extraAddress{
+    width: 250px;
+}
+#delivery-rq{
+    width: 400px;
+}

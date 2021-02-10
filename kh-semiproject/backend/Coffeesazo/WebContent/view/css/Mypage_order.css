@@ -1,0 +1,115 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+.edit_title, h3, p { /*마이페이지 내부 글씨체*/
+	margin: 0;
+	padding: 0;
+	letter-spacing: -0.4px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.table, .justify-content-center {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.my-order {
+	cursor: pointer;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+form {
+	display: inline;
+}
+
+.size-controll {
+	text-align: center;
+}
+
+.user_info { /*유저이미지,이름 묶음*/
+	font-size: 30px;
+	text-overflow: ellipsis;
+	border-bottom: 1px solid #bcbcbc
+}
+
+main {
+	margin-top: 200px;
+	width: 100%;
+	margin: 200px auto;
+}
+
+.edit_title { /* 제목 밑줄 띄기*/
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+h1 { /* 제목 밑줄*/
+	border-bottom: 2px solid #000000;
+	padding-bottom: 20px;
+}
+
+.csl-button {
+	text-align: right;
+}
+
+nav {
+	text-align: center;
+}
+
+.card_small { /*버튼속성*/
+	padding: 36px 24px;
+	margin: 20px 20px 20px 0;
+	width: 280px;
+	height: 172px;
+	box-shadow: 1px 2px 8px 0 rgba(0, 0, 0, 0.12);
+	border-radius: 16px;
+	display: inline-block;
+	float: left;
+	color: #444;
+	background-color: #fff;
+	transition: 0.1s ease-in-out;
+}
+
+.card_text { /* 버튼글씨 속성*/
+	padding-top: 2px;
+	color: #666;
+}
+
+.card_textlink { /* 버튼내부 글씨 수정*/
+	padding-top: 16px;
+	text-decoration: underline;
+	color: #888;
+}
+
+.card_small:hover { /*마우스 올릴시 효과*/
+	box-shadow: 4px 8px 20px 2px rgba(0, 0, 0, 0.15);
+	transition: 0.2s ease-in-out;
+	color: #4d2600;
+}
+
+
+h1 {
+	border-bottom: solid #000000;
+	padding-bottom: 20px;
+}
+
+ul { /* 버튼정렬*/
+	display: inline-block;
+}
+
+.button { /*전체 버튼속성*/
+	margin-left: 10px
+}
+
+a.page-link {
+	text-align: center;
+}
+
+td {
+	cursor: pointer;
+}
+

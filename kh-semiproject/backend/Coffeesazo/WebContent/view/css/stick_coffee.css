@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+        html,
+        body {
+
+            *font-family: 'Noto Sans KR', sans-serif; 
+            margin: 0;
+            padding: 0;
+            height: 100%;
+
+        }
+
+     
+        /*상품페이지 메인*/
+
+        main{ 
+            margin:180px auto auto 100px;
+            position: relative;
+            min-height: 100%;
+        }
+
+        .sub_title{
+      	    font-family: 'Nanum Myeongjo', serif;
+            font-size: 45px;
+            text-align: left;
+            color:  #4d2600;
+            padding: 0px 0px 0px 100px;
+        }    
+        
+    
+      
+        .tag_title{
+        font-family: 'Noto Sans KR', sans-serif; 
+        font-size: 23px;
+        text-align: left;
+        font-weight: bold;
+        color: #222020e5;
+        }
+
+        .inner_space{
+            max-width:60%;
+            margin: auto;
+            overflow: hidden;
+            padding:0 20px;
+        }
+
+        .sub_under_dec{
+            width: 14%;
+            height: 4px;
+            background-color:#bd661fee; /*넣을지 말지 */
+            margin: 5px 0px;
+           /* margin: 0px auto 10px auto;*/
+        }
+
+        .row_space{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 30px;
+
+        }
+
+        .col_space{
+            flex: 33.33%;
+            max-width: 33.33%;;
+            box-sizing: border-box;
+            padding: 15px;
+            
+        }
+
+        .item_list{
+            background: #fff;
+            padding: 0px;
+            background-color: white;
+            border:1px solid rgba(161, 153, 153, 0.74);
+            width: 74%;
+            height: 370px;
+        }
+
+        .item_list:hover{
+            border-color: black;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+        .item_list img{
+            width: 100%;
+            height: 270px;
+        }
+
+        .stick_name{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 15px; 
+            color:black;
+            font-family: 'Noto Sans KR', sans-serif; 
+        }
+        .product_price{
+            font-family: 'Noto Sans KR', sans-serif; 
+            font-size: 18px;
+            text-align: center;
+            line-height: 1.5rem;
+            font-weight: bold;
+            color: #ff0000c4;
+           
+        }
+
+     a:link {color:black; text-decoration:none;} /*하이퍼링크데코 지움 */

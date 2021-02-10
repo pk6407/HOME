@@ -1,0 +1,133 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+title, h1 { /*寃곗젣李� �궡遺� 湲��뵪泥�*/
+	margin: 0;
+	padding: 0;
+	letter-spacing: -0.4px;
+	font-family: 'Nanum Myeongjo', serif;
+}
+
+main {
+	margin-top: 169.89px;
+	width: 100%;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+#menu-container {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.menu1 {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.menu-toplogo {
+	width: 100%;
+	float: left;
+}
+
+.menu-toplogo h1 {
+	float: left;
+	color: #4d2600;
+	font-size: 70px;
+	font-weight: 800;
+	letter-spacing: 5px;
+	margin: 0;
+}
+
+.menu-toplogo h1 a {
+	color: #4d2600;;
+	text-decoration: none;
+	font-size: 50px;
+	margin: 0;
+}
+
+.menu-toptag {
+	width: 70%;
+}
+
+.menu-toptag a {
+	font-size: 50px;
+	text-decoration: none;
+	color: none;
+	color: black;
+}
+
+.menu-toptag a:hover {
+	color: black;
+}
+
+.menu-productinfo {
+	border-bottom: 2px solid black;
+	margin-top: 250px;
+	width: 1000px;
+	height: 650px;
+}
+
+.menu-productinfo img {
+	width: 300px;
+	height: 350px;
+	margin-top: 5%;
+}
+
+.menu-result {
+	text-align: center;
+	width: 500px;
+	height: 500px;
+	float: right;
+	border: 3px solid #dcdcdc;
+	border-radius: 10px;
+}
+
+.result-title {
+	color: sandybrown;
+	border-bottom: 2px solid #dcdcdc;
+}
+
+.result-product {
+	padding: 10px;
+}
+
+.result-product p {
+	font-size: 20px;
+}
+
+.menu2 {
+	margin: 0 auto;
+	margin-top: 15%;
+	margin-bottom: 100px;
+	width: 100%;
+	text-align: center;
+}
+
+.menu2 img {
+	width: 400px;
+	height: 530px;
+	
+}
+
+.detail-infomation {
+	float: right;
+	width: 600px;
+	height: 530px;
+	border: 3px solid #dcdcdc;
+	border-radius: 10px;
+}
+
+.p1 {
+	text-align: center;
+	color: sandybrown;
+	font-size: 30px;
+}
+
+.p2 {
+	color: gray;
+	border-top: solid gray 3px;
+	text-align: center;
+}
+
+.detail-mid p {
+	font-size: 25px;
+}

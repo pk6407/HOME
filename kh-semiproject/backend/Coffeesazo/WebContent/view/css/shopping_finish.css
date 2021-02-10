@@ -1,0 +1,30 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+main{
+    
+    width: 100%;
+    height:1200px;
+    padding-top: 300px;
+    
+}
+
+.finished{
+    width: 1000px;
+    margin:0 auto;
+    
+    text-align: center;
+    background-color: #dcdcdc;
+}
+.text{
+
+    margin-top: 200px ;
+    font-size: 28px;
+    font-weight: 600;
+    
+}
+.button{
+    margin-top: 150px
+}
+.button button{
+    width: 350px;
+    height: 100px;
+}

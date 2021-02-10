@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+a {
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+}
+
+p {
+	margin: 0;
+}
+
+ul, li {
+	list-style: none;
+}
+
+h1 {
+	font-family: 'Nanum Myeongjo', serif;
+	text-align: center;
+	font-weight: 300;
+}
+
+.section {
+	min-height: 100%;
+	margin: 0 auto;
+	margin-top: 180px;
+	width: 500px;
+	margin-bottom: 0;
+}
+
+.welcome-message h1 {
+	position: relative;
+	margin-top: 250px;
+	font-weight: 600;
+}
+
+.youridis {
+	width: 100%;
+	padding: 70px;
+	text-align: center;
+}
+
+.youridis span>b {
+	font-weight: 600;
+}
+
+.signin-and-gotomain {
+	margin: 20px 0 20px 0;
+}
+
+.signin-and-gotomain input {
+	width: 49.44%;
+	height: 50px;
+	background-color: #4d2600;
+	color: white;
+	font-size: 1rem;
+	border: none;
+	font-weight: bold;
+}
+
+.signin-and-gotomain input:hover {
+	background-color: burlywood;
+	transition: 0.3s;
+	cursor: pointer;
+}

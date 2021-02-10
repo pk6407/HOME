@@ -1,0 +1,241 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.form-control {
+	display: inline-block;
+	width: 50%;
+	font-family: 'Noto Sans KR', sans-serif;	
+	
+}
+
+#sample6_postcode, #sample6_address, #sample6_detailAddress {
+	background-color: white;
+	
+}
+title, header, footer, h1 {
+	font-family: 'Nanum Myeongjo', serif;
+}
+
+label, p, h3, .edit_title, h3, .btn-outline-secondary {
+	/*회원정보 변경 내부 글씨체*/
+	margin: 0;
+	padding: 0;
+	letter-spacing: -0.4px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+#postbutton {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 0;
+}
+
+.edit_title {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+
+.input-group-btn-prepend {
+	display: inline-block;
+}
+
+.user_name, .col-sm-10 {
+	text-align: left;
+	font-size: 20px;
+}
+
+span {
+	/*지현씨 푸터헤더 글씨체 */
+	font-family: 'Nanum Myeongjo', serif;
+}
+
+h1 { /* 제목 밑줄*/
+	border-bottom: solid #000000;
+	padding-bottom: 20px;
+}
+
+
+
+.form_move {
+
+	text-align: center;
+}
+
+
+
+#postbutton, .btn-outline-success {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+#postbutton {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 0;
+}
+
+
+.edit_title {
+	/* 타이틀 정렬*/
+	text-align: center;
+}
+
+.form-horizontal {
+	margin: auto;
+}
+
+content {
+	float: left;
+}
+
+.card_small { /*버튼속성*/
+	padding: 36px 24px;
+	margin: 20px 20px 20px 0;
+	width: 280px;
+	height: 172px;
+	box-shadow: 1px 2px 8px 0 rgba(0, 0, 0, 0.12);
+	border-radius: 16px;
+	display: inline-block;
+	float: left;
+	color: #444;
+	background-color: #fff;
+	transition: 0.1s ease-in-out;
+}
+
+.card_text { /* 버튼글씨 속성*/
+	padding-top: 2px;
+	color: #666;
+}
+
+.card_textlink { /* 버튼내부 글씨 수정*/
+	padding-top: 16px;
+	text-decoration: underline;
+	color: #888;
+}
+
+.card_small:hover { /*마우스 올릴시 효과*/
+	box-shadow: 4px 8px 20px 2px rgba(0, 0, 0, 0.15);
+	transition: 0.2s ease-in-out;
+	color: #4d2600;
+}
+
+ul { /* 버튼정렬*/
+	display: inline-block;
+}
+
+
+.size-controll {
+	text-align: center;
+}
+
+.mypage_title { /*마이페이지 타이틀 정렬*/
+	text-align: center;
+}
+
+.size-controll {
+	text-align: center;
+}
+
+.user_info { /*유저이미지,이름 묶음*/
+	font-size: 30px;
+	text-overflow: ellipsis;
+	border-bottom: 1px solid #bcbcbc
+}
+.user_name {
+	font-family: 'Noto Sans KR', sans-serif;	
+}
+
+#inputemail, #inputPhone, #inputPassword3, #inputname {
+	margin-bottom: 20px;
+	width: 490px;
+}
+
+.btn-outline-secondary, .btn-outline-success {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.button { /*전체 버튼속성*/
+	margin-left: 10px
+}
+
+h1 { /* 마이페이지 밑줄*/
+	border-bottom: solid #000000;
+	padding-bottom: 20px;
+}
+
+
+#main_container { /*마이페이지 전체적 가운데*/
+	width: 100%;
+	margin-top: 200px;
+	text-align: center;
+}
+
+.warn-info {
+	margin-top: 0.5rem;
+	font-size: 0.8rem;
+	color: red;
+	/*js 이용하여 입력되지 않았을 시 보이게 하기*/
+	display: none;
+	font-family: 'Noto Sans KR', sans-serif;	
+}
+
+
+span { /*지현씨 푸터헤더 글씨체 */
+	font-family: 'Nanum Myeongjo', serif;
+}
+
+title, header, footer, h1 {
+	font-family: 'Nanum Myeongjo', serif;
+}
+
+h3 { /*마이페이지 내부 글씨체*/
+	margin: 0;
+	padding: 0;
+	letter-spacing: -0.4px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+h1 { /* 마이페이지 밑줄*/
+	border-bottom: solid #000000;
+	padding-bottom: 20px;
+}
+
+a { /* 마우스 올릴시 전체 커서쳐리*/
+	cursor: pointer;
+	text-decoration: none;
+}
+
+ul { /* 버튼정렬*/
+	display: inline-block;
+}
+
+
+.footer {
+	font-family: 'Nanum Myeongjo', serif;
+}
+
+
+
+#inputemail, #inputPhone, #inputPassword3, #inputname {
+	margin-bottom: 20px;
+	width: 490px;
+}
+
+.btn-outline-secondary, .btn-outline-success {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
