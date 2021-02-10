@@ -1,0 +1,139 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+title, header, footer, h1 {  /*결제창 내부 글씨체*/
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.4px;
+    font-family: 'Nanum Myeongjo', serif;
+    }
+main{
+    margin-top: 169.89px;
+    width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+    
+#menu-container{
+    
+    padding-top: 60px;
+    padding-left: 250px;
+    padding-right: 250px;
+    width: 100%;
+    
+    
+    
+    
+    
+}
+    
+    
+    
+.menu1{
+    width: 100%;
+    
+    
+}
+.menu-toplogo{
+    margin-top: 50px;
+}
+.menu-toplogo h1 {
+    width: 100%;
+    
+    color: #4d2600;
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+.menu-toplogo h1 a{
+    color: #4d2600;;
+    text-decoration: none;
+}
+.menu-toptag{
+    
+    width: 70%;
+    
+}
+   
+.menu-toptag a{
+    
+    font-size: 50px;
+    text-decoration: none;
+    color: none;
+    color: black;
+    
+}
+.menu-productinfo{
+    border-bottom: 2px solid black;
+    margin-top: 5%;
+   
+    width: 100%;
+    height: 800px;
+    
+}
+.menu-productinfo img{
+   
+    width: 300px;
+    height: 350px;
+    margin-top: 5%;
+}
+.menu-result{
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    float: right;
+    border: 3px solid #dcdcdc;
+    border-radius: 10px;
+    
+    
+    
+}
+.result-title{
+    color: sandybrown;
+    border-bottom: 2px solid #dcdcdc;
+}
+.result-product p{
+    font-size: 20px;
+}
+.menu2{
+    margin-top: 15%;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 900px;
+    
+    
+    
+    
+}
+.menu2 img{
+    width: 400px;
+    height: 500px;
+    
+    
+    
+}
+.detail-infomation{
+    display: inline-block;
+    float: right;
+    width: 600px;
+    height: 470px;
+    border: 3px solid #dcdcdc;
+    border-radius: 10px;
+}
+    
+    
+    
+    
+
+.p1{
+    text-align: center;
+ color:  sandybrown;
+  font-size: 30px;
+}
+.p2{
+  color: gray;
+  border-top: solid gray 3px; 
+  text-align: center;
+}
+.detail-mid p{
+    font-size: 25px;
+    
+}
