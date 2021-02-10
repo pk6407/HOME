@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항 | COFFEESAZO</title>
+    <!-- 부트스트랩 불러오기 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="index copy.css" type="text/css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="https://p7.hiclipart.com/preview/988/211/651/white-coffee-tea-cafe-computer-icons-cup-of-coffee-icon.jpg">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link href="./css/notice.css" rel="stylesheet" type="text/css" />    
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-align">
+            <div class="header-logo">
+                <a href="#"><img src="./img/logo_white.png" class="logo"></a>
+            </div>
+            <div class="btns-signin-signup">
+                <span><a href="#">로그인</a></span>
+                <span><a href="#">회원가입</a></span>
+                <span><a href="#">고객센터</a></span>
+                <span><a href="#"><img src="./img/shoppingcart_white.png" id="shoppingcart"></a></span>
+            </div>
+        </div>
+
+        <div class="shopping">
+            <span id="wholebean"><a href="#">원두</a></span>
+            <!-- onmouseover 써볼지? (javascript)-->
+            <span id="stickcoffee"><a href="#">스틱커피</a></span>
+            <span id="capsulecoffee"><a href="#">캡슐커피</a></span>
+
+        </div>
+    </header>
+    <main>
+        <div id="container">
+            <div id="contents">
+                <h1>고객센터</h1>
+                <div class="title-area">
+                    <div class="boardnavi">
+                        <a href="#" class="navi01">
+                            <strong>공지사항</strong>
+                        </a>
+                        <a href="./QnA.html" class="navi02">
+                            <span>1:1 문의</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="base-table">
+                    <table border="1" summary>
+                        <caption>게시판 목록</caption>
+                        <thead class="element-box">
+                            <tr>
+                                <th scope="col">순번</th>
+                                <th scope="col" class="displaynone">카테고리</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">작성자</th>
+                                <th scope="col" class>작성일</th>
+                            </tr>
+                        </thead>
+                        <tbody class="index-box">
+                            <tr style="background-color:#FFFFFF; color: black;">
+                                <td>6</td>
+                                <td class="displaynone"></td>
+                                <td class="subject">
+                                    <a href="./Notice_detail.html">크리스마스 EVENT</a>
+                                </td>
+                                <td>관리자</td>
+                                <td class="txtLess ">2020-12-16</td>
+                            </tr>
+                        </tbody>
+                        <tbody class="index-box">
+                            <tr style="background-color:#FFFFFF; color: black;">
+                                <td>5</td>
+                                <td class="displaynone"></td>
+                                <td class="subject">
+                                    <a href="#">공지사항</a>
+                                </td>
+                                <td>관리자</td>
+                                <td class="txtLess ">2020-12-16</td>
+                            </tr>
+                        </tbody>
+                        <tbody class="index-box">
+                            <tr style="background-color:#FFFFFF; color: black;">
+                                <td>4</td>
+                                <td class="displaynone"></td>
+                                <td class="subject">
+                                    <a href="#">공지공지</a>
+                                </td>
+                                <td>관리자</td>
+                                <td class="txtLess ">2020-12-16</td>
+                            </tr>
+                        </tbody>
+                        <tbody class="index-box">
+                            <tr style="background-color:#FFFFFF; color: black;">
+                                <td>3</td>
+                                <td class="displaynone"></td>
+                                <td class="subject">
+                                    <a href="#">공지지지</a>
+                                </td>
+                                <td>관리자</td>
+                                <td class="txtLess ">2020-12-16</td>
+                            </tr>
+                        </tbody>
+                        <tbody class="index-box">
+                            <tr style="background-color:#FFFFFF; color: black;">
+                                <td>2</td>
+                                <td class="displaynone"></td>
+                                <td class="subject">
+                                    <a href="#">공 지</a>
+                                </td>
+                                <td>관리자</td>
+                                <td class="txtLess ">2020-12-16</td>
+                            </tr>
+                        </tbody>
+                        <tbody class="index-box">
+                            <tr style="background-color:#FFFFFF; color: black;">
+                                <td class="bottom">1</td>
+                                <td class="displaynone"></td>
+                                <td class="subject">
+                                    <a href="#">공지쓰</a>
+                                </td>
+                                <td>관리자</td>
+                                <td class="txtLess ">2020-12-16</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <ul class="footer-list-box">
+                <li>COFFEESAZO | 대표자: 이지현 | 사업자등록번호 123-45-67890</li>
+                <li>서울특별시 영등포구 선유도2로 57 이레빌딩(구관) 19F</li>
+                <li>책임자: 제윤지 | 개인정보관리책임자: 김은규</li>
+                <li>고객센터 02-1234-5678 | E-mail: customer@coffeesazo.com</li>
+            </ul>
+        </div>
+    </footer>
+    <!-- 부트스트랩 자바스크립트 추가 -->
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

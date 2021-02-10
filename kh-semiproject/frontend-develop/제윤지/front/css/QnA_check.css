@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header,
+footer {
+    box-sizing: border-box;
+}
+
+header a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+header ul,
+li {
+    list-style: none;
+}
+
+/* header 상단 고정*/
+header {
+    font-family: 'Nanum Myeongjo', serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1000;
+}
+
+h1 {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.header-logo {
+    background-color: #4d2600;
+}
+
+.logo {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* 로그인 회원가입 고객센터*/
+.btns-signin-signup {
+    position: absolute;
+    right: 5px;
+    top: 45px;
+    width: 400px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btns-signin-signup a {
+    margin: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+#shoppingcart {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    left: -8px;
+}
+
+.shopping {
+    margin: 0 auto;
+    margin: 20px 0 20px 0;
+    text-align: center;
+
+}
+
+.shopping>span {
+    margin: 0 30px 0 30px;
+}
+
+.shopping a:hover {
+    font-weight: bold;
+    transition: all 0.2s ease;
+    color: #4d2600;
+
+}
+
+.section {
+    margin-top: 180px;
+    min-height: 100%;
+}
+
+.shopping {
+    position: relative;
+    margin: 0 auto;
+    margin: 20px 0 20px 0;
+    text-align: center;
+
+}
+
+.shopping>span {
+    margin: 0 30px 0 30px;
+}
+
+.shopping a:hover {
+    font-weight: bold;
+    transition: all 0.2s ease;
+    color: #4d2600;
+
+}
+
+/*footer 하단 고정*/
+footer {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #4d2600;
+    padding: 5px;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+/* 메인 코드 시작*/
+main {
+    position: relative;
+    min-height: 100%;
+}
+
+#container {
+    margin: 0 auto;
+    height: 1300px;
+}
+
+#contents {
+    padding-top: 200px;
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+/*공지사항, 문의사항 네비바*/
+.boardnavi {
+    margin: 30px auto;
+    padding: 0;
+    text-align: center;
+    clear: both;
+    overflow: hidden;
+}
+
+.boardnavi a {
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: #353535;
+    text-decoration: none;
+    border-bottom: 3px solid #8B4F1D;
+}
+
+h1 {
+    padding-top: 50px;
+    text-align: center;
+    color: #4d2600;
+    font-size: 30px;
+}
+
+/* 글쓰는 부분 코드 */
+.layout-box {
+    width: 100%;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.layout-box h2 {
+    position: relative;
+    font-size: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #353535;
+}
+
+.board {
+    position: relative;
+    display: inherit;
+    height: 620px;
+    padding: 70px 0 70px 0;
+    border: 1px solid #e5e5e5;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.board label {
+    position: relative;
+    color: #353535;
+    font-size: 14px;
+    float: left;
+    padding-left: 130px;
+    text-align: center;
+}
+
+#title {
+    width: 700px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    outline-style: none;
+    font-size: 14px;
+}
+
+#content {
+    width: 700px;
+    height: 300px;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    outline-style: none;
+    font-size: 14px;
+}
+
+.file-upload {
+    font-size: 13px;
+    color: #353535;
+    border-radius: 0;
+    outline-style: none;
+    border-radius: 0;
+    padding-right: 487px;
+    position: relative;
+}
+
+/* 하단 버튼 코드 */
+.bottom-button {
+    position: relative;
+    padding: 85px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bottom-button a {
+    text-decoration: none;
+    display: inline-block;
+    color: #353535;
+    font-size: 12px;
+    line-height: 28px;
+    width: 80px;
+    height: 30px;
+    background-color: #4d2600;
+    color: #fff;
+    margin: 5px;
+}
+.bottom-button a:hover {
+    background-color: burlywood;
+    transition: 0.3s;
+    cursor: pointer;
+}

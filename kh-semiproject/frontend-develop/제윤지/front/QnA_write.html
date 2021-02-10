@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1:1문의 작성 | COFFEESAZO</title>
+    <!-- 부트스트랩 불러오기 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="index copy.css" type="text/css">
+    <!--favicon-->
+    <link rel="shortcut icon"
+        href="https://p7.hiclipart.com/preview/988/211/651/white-coffee-tea-cafe-computer-icons-cup-of-coffee-icon.jpg">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link href="./css/qna_write.css" rel="stylesheet" type="text/css" /> 
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-align">
+            <div class="header-logo">
+                <a href="#"><img src="./img/logo_white.png" class="logo"></a>
+            </div>
+            <div class="btns-signin-signup">
+                <span><a href="#">로그인</a></span>
+                <span><a href="#">회원가입</a></span>
+                <span><a href="#">고객센터</a></span>
+                <span><a href="#"><img src="./img/shoppingcart_white.png" id="shoppingcart"></a></span>
+            </div>
+        </div>
+
+        <div class="shopping">
+            <span id="wholebean"><a href="#">원두</a></span>
+            <!-- onmouseover 써볼지? (javascript)-->
+            <span id="stickcoffee"><a href="#">스틱커피</a></span>
+            <span id="capsulecoffee"><a href="#">캡슐커피</a></span>
+
+        </div>
+    </header>
+    <main>
+        <div id="container">
+            <div id="contents">
+                <h1>고객센터</h1>
+                <div class="boardnavi">
+                    <a href="#" class="navi01">
+                        <span>공지사항</span>
+                    </a>
+                    <a href="#" class="navi02">
+                        <span>1:1 문의</span>
+                    </a>
+                </div>
+                <div class="layout-box">
+                    <h2>1:1 문의 작성하기</h2>
+                    <form name="board" method="post" class="board">
+                        <label for="title">제목</label>
+                        <input type="text" id="title" name="title" placeholder="내용을 입력해 주세요." required />
+                        <br />
+                        <br />
+                        <label for="content">내용</label>
+                        <input type="text" id="content" name="content" placeholder="내용을 입력해 주세요." required />
+                        <br />
+                        <br />
+                        <label for="file">첨부파일</label>
+                        <div class="file-upload">
+                            <input type="file" id="file" name="file" multiple />
+                        </div>
+                        <div class="bottom-button">
+                            <a href="#" class="btn-save">등록하기</a>
+                            <a href="#" class="btn-cancle">취소하기</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <ul class="footer-list-box">
+                <li>COFFEESAZO | 대표자: 이지현 | 사업자등록번호 123-45-67890</li>
+                <li>서울특별시 영등포구 선유도2로 57 이레빌딩(구관) 19F</li>
+                <li>책임자: 제윤지 | 개인정보관리책임자: 김은규</li>
+                <li>고객센터 02-1234-5678 | E-mail: customer@coffeesazo.com</li>
+            </ul>
+        </div>
+    </footer>
+    <!-- 부트스트랩 자바스크립트 추가 -->
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
