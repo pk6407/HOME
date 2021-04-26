@@ -1,0 +1,271 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;  
+}
+#ProductionManagementMain {
+	height: 800px;
+	width: 1200px;
+}
+
+#ProductionManagementMain>#PmMenu {
+	float: left;
+	width: 200px;
+}
+
+#ProductionManagementMain>#PmMenu ul{
+	list-style: none;
+}
+
+#ProductionManagementMain>#PmMenu li{
+	line-height: 100px;
+	text-align: center;
+}
+#ProductionManagementMain>#PmMenu .Ws{
+	background-color: white;
+}
+
+#ProductionManagementMain>#PmMenu .Rs{
+	background-color: white;
+}
+
+#ProductionManagementMain>#PmMenu a{
+	font-size: 25px;
+	text-align: center;
+}
+
+#ProductionManagementMain>#PmShow{
+	float: left;
+	width: 1000px;
+	height: 500px;
+}
+
+h1 {
+	font-size: 23px;
+}
+
+h2 {
+	font-size: 17px;
+}
+
+p {
+	font-size: 15px;
+}
+.titular {
+display: block;
+line-height: 60px;
+margin: 0;
+text-align: center;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.horizontal-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+	.horizontal-list li {
+		float: left;
+	}
+		.block {
+			margin: 25px 25px 0 0;
+			background: #394264;
+			border-radius: 5px;
+      float: right;
+      width: 300px;
+      overflow: hidden;
+		}
+		/******************************************** LEFT CONTAINER *****************************************/
+
+			.donut-chart-block {
+				overflow: hidden;
+			}
+				.donut-chart-block .titular {
+					padding: 10px 0;
+				}
+				.os-percentages li {
+					width: 75px;
+					border-left: 1px solid #394264;
+					text-align: center;					
+					background: #50597b;
+				}
+					.os {
+						margin: 0;
+						padding: 10px 0 5px;
+						font-size: 15px;		
+					}
+						.os.ios {
+							border-top: 4px solid #e64c65;
+						}
+						.os.mac {
+							border-top: 4px solid #11a8ab;
+						}
+						.os.linux {
+							border-top: 4px solid #fcb150;
+						}
+						.os.win {
+							border-top: 4px solid #4fc4f6;
+						}
+					.os-percentage {
+						margin: 0;
+						padding: 0 0 15px 10px;
+						font-size: 25px;
+					}
+			.line-chart-block, .bar-chart-block {
+				height: 400px;
+			}
+				.line-chart {
+					height: 200px;
+					background: #11a8ab;
+				}
+				.time-lenght {
+					padding-top: 22px;
+					padding-left: 38px;
+          overflow: hidden;
+				}
+					.time-lenght-btn {
+						display: block;
+						width: 70px;
+						line-height: 32px;
+						background: #50597b;
+						border-radius: 5px;
+						font-size: 14px;
+						text-align: center;
+						margin-right: 5px;
+						-webkit-transition: background .3s;
+						transition: background .3s;
+					}
+						.time-lenght-btn:hover {
+							text-decoration: none;
+							background: #e64c65;
+						}
+				.month-data {
+					padding-top: 28px;
+				}
+					.month-data p {
+						display: inline-block;
+						margin: 0;
+						padding: 0 25px 15px;            
+						font-size: 16px;
+					}
+					
+/******************************************
+GRAFICO CIRCULAR PIE CHART
+******************************************/
+.donut-chart {
+  position: relative;
+	width: 200px;
+  height: 200px;
+	margin: 0 auto 2rem;
+	border-radius: 100%
+ }
+p.center-date {
+  background: #394264;
+  position: absolute;
+  text-align: center;
+	font-size: 28px;
+  top:0;left:0;bottom:0;right:0;
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  border-radius: 50%;
+  line-height: 35px;
+  padding: 15% 0 0;
+}
+.center-date span.scnd-font-color {
+ line-height: 0; 
+}
+.recorte {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+.quesito {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+#porcion1 {
+    transform: rotate(0deg);
+  }
+
+#porcion1 .quesito {
+    background-color: #E64C65;
+    transform: rotate(76deg);
+  }
+#porcion2 {
+    transform: rotate(76deg);
+  }
+#porcion2 .quesito {
+    background-color: #11A8AB;
+    transform: rotate(140deg);
+  }
+#porcion3 {
+    transform: rotate(215deg);
+  }
+#porcion3 .quesito {
+    background-color: #4FC4F6;
+    transform: rotate(113deg);
+  }
+#porcionFin {
+    transform:rotate(-32deg);
+  }
+#porcionFin .quesito {
+    background-color: #FCB150;
+    transform: rotate(32deg);
+  }
+.nota-final {
+  clear: both;
+  color: #4FC4F6;
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+.nota-final strong {
+  color: #E64C65;
+}
+
+.table-scroll {
+	position:relative;
+	max-width:600px;
+	margin:auto;
+	overflow:hidden;
+	border:1px solid #000;
+	float : left;
+	margin-left: 100px;
+	margin-top: 150px;
+}
+.table-wrap {
+	width:100%;
+	overflow:auto;
+}
+.table-scroll table {
+	width:100%;
+	margin:auto;
+	border-collapse:separate;
+	border-spacing:0;
+}
+.table-scroll th, .table-scroll td {
+	padding:5px 10px;
+	border:1px solid #000;
+	background:#fff;
+	white-space:nowrap;
+	vertical-align:top;
+}
+.btns{
+	margin-left:800px;
+	margin-top:500px;
+	position: absolute;
+	text-align: right;
+}
+.btns input[type="button" ] {
+ height: 35px;
+ width: 50px;
+}

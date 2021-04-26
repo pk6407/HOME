@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+#ProductionManagementMain {
+	height: 800px;
+	width: 1200px;
+}
+
+#ProductionManagementMain>#PmMenu {
+	float: left;
+	width: 200px;
+}
+
+#ProductionManagementMain>#PmMenu ul{
+	list-style: none;
+}
+
+#ProductionManagementMain>#PmMenu li{
+	line-height: 100px;
+	text-align: center;
+	border: 2px solid;
+	background-color: gray;
+}
+
+#ProductionManagementMain>#PmMenu a{
+	font-size: 25px;
+	text-align: center;
+}
+
+#ProductionManagementMain>#PmShow{
+	float: left;
+	width: 1000px;
+	height: 500px;
+}

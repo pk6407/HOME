@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+#approvalWrite{
+	width: 750px;
+	
+}
+
+#approvalTable {
+	margin-top: 20px;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+#end {
+	height: 60px;
+}
+
+.date {
+	width: 60px;
+}
+
+#content {
+	width: 680px;
+	height: 200px;
+	resize: none;
+}
+
+#contentsmall {
+	width: 680px;
+	height: 60px;
+	resize: none;
+}
+
+.stamp {
+	height: 50px;
+	width: 60px;
+}
+
+#tmi {
+	width: 460px;
+	height: 67px;
+	resize: none;
+}
+
+#reasonTitle {
+	width: 680px;
+}
+
+#tabelhead {
+	width: 60px;
+}
+
+#fileUpload{
+	margin-left: 10px;
+	width: 480px;
+}
