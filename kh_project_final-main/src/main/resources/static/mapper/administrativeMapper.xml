@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper
+	namespace="kh.projectfinal.administrative.AdministrativeMapper">
+
+	<select id="getTotListSizeDraft"
+		parameterType="kh.projectfinal.administrative.Page" resultType="int">
+		select
+		count(paper_no) from draft_info
+		where (paper_no
+		like '%${findStr}%'
+		or
+		title like '%${findStr}%'
+		or date_write
+		like
+		'%${findStr}%') and state
+		=
+		${state} and (emp_no = ${empNo} or staff = ${empNo} or gm = ${empNo}
+		or dm = ${empNo} or ceo=${empNo})
+	</select>
+
+	<select id="selectDraftVo"
+		parameterType="kh.projectfinal.administrative.Page"
+		resultType="kh.projectfinal.administrative.DraftVo">
+		select * from (
+		select rownum rno, m.* from
+		(
+		select paper_no,
+		title, date_write from draft_info
+		where
+		(paper_no like '%${findStr}%'
+		or
+		title like '%${findStr}%'
+		or date_write
+		like '%${findStr}%') and state =
+		${state} and (emp_no = ${empNo} or staff = ${empNo} or gm = ${empNo}
+		or dm = ${empNo} or ceo=${empNo})
+		order by paper_no desc
+		) m
+		) where rno
+		between #{startNo} and
+		#{endNo}
+	</select>
+
+	<select id="getTotListSizeStuff"
+		parameterType="kh.projectfinal.administrative.Page" resultType="int">
+		select
+		count(paper_no)
+		from stuff_info
+		where (paper_no like '%${findStr}%'
+		or
+		title like '%${findStr}%'
+		or date_write like '%${findStr}%')
+		and state =
+		${state} and (emp_no = ${empNo} or staff = ${empNo} or gm = ${empNo}
+		or dm = ${empNo} or ceo=${empNo})
+	</select>
+
+	<select id="selectStuffVo"
+		parameterType="kh.projectfinal.administrative.Page"
+		resultType="kh.projectfinal.administrative.StuffVo">
+		select * from (
+		select rownum rno, m.* from
+		(
+		select paper_no,
+		title, date_write from stuff_info
+		where
+		(paper_no like '%${findStr}%'
+		or
+		title like '%${findStr}%'
+		or date_write
+		like '%${findStr}%') and state =
+		${state} and (emp_no = ${empNo} or staff = ${empNo} or gm = ${empNo}
+		or dm = ${empNo} or ceo=${empNo})
+		order by paper_no desc
+		) m
+		) where rno
+		between #{startNo} and #{endNo}
+	</select>
+
+	<select id="getTotListSizeAttendance"
+		parameterType="kh.projectfinal.administrative.Page" resultType="int">
+		select
+		count(paper_no) from attendance_info
+		where
+		(paper_no like
+		'%${findStr}%'
+		or title like '%${findStr}%'
+		or date_write
+		like
+		'%${findStr}%') and state
+		= ${state} and (emp_no = ${empNo} or staff = ${empNo} or gm = ${empNo}
+		or dm = ${empNo} or ceo=${empNo})
+	</select>
+
+	<select id="selectAttendanceVo"
+		parameterType="kh.projectfinal.administrative.Page"
+		resultType="kh.projectfinal.administrative.AttendanceVo">
+		select * from (
+		select rownum rno, m.* from
+		(
+		select paper_no,
+		title, date_write from attendance_info
+		where
+		(paper_no like
+		'%${findStr}%'
+		or title like '%${findStr}%'
+		or date_write
+		like
+		'%${findStr}%') and state = ${state} and (emp_no = ${empNo} or staff =
+		${empNo} or gm = ${empNo}
+		or dm = ${empNo} or ceo=${empNo})
+		order by
+		paper_no desc
+		) m
+		) where
+		rno between #{startNo} and #{endNo}
+	</select>
+
+	<select id="getTotListSizeMyDraft"
+		parameterType="kh.projectfinal.administrative.Page" resultType="int">
+		select
+		count(paper_no) from draft_info
+		where (paper_no
+		like '%${findStr}%'
+		or
+		title like '%${findStr}%'
+		or date_write
+		like
+		'%${findStr}%') and state
+		=
+		${state} and emp_no = ${empNo}
+	</select>
+
+	<select id="selectMyDraftVo"
+		parameterType="kh.projectfinal.administrative.Page"
+		resultType="kh.projectfinal.administrative.DraftVo">
+		select * from (
+		select rownum rno, m.* from
+		(
+		select paper_no,
+		title, date_write from draft_info
+		where
+		(paper_no like '%${findStr}%'
+		or
+		title like '%${findStr}%'
+		or date_write
+		like '%${findStr}%') and state =
+		${state} and emp_no = ${empNo}
+		order by paper_no desc
+		) m
+		) where rno
+		between #{startNo} and
+		#{endNo}
+	</select>
+
+	<select id="getTotListSizeMyStuff"
+		parameterType="kh.projectfinal.administrative.Page" resultType="int">
+		select
+		count(paper_no)
+		from stuff_info
+		where (paper_no like '%${findStr}%'
+		or
+		title like '%${findStr}%'
+		or date_write like '%${findStr}%')
+		and state =
+		${state} and emp_no = ${empNo}
+	</select>
+
+	<select id="selectMyStuffVo"
+		parameterType="kh.projectfinal.administrative.Page"
+		resultType="kh.projectfinal.administrative.StuffVo">
+		select * from (
+		select rownum rno, m.* from
+		(
+		select paper_no,
+		title, date_write from stuff_info
+		where
+		(paper_no like '%${findStr}%'
+		or
+		title like '%${findStr}%'
+		or date_write
+		like '%${findStr}%') and state =
+		${state} and emp_no = ${empNo}
+		order by paper_no desc
+		) m
+		) where rno
+		between #{startNo} and #{endNo}
+	</select>
+
+	<select id="getTotListSizeMyAttendance"
+		parameterType="kh.projectfinal.administrative.Page" resultType="int">
+		select
+		count(paper_no) from attendance_info
+		where
+		(paper_no like
+		'%${findStr}%'
+		or title like '%${findStr}%'
+		or date_write
+		like
+		'%${findStr}%') and state
+		= ${state} and emp_no = ${empNo}
+	</select>
+
+	<select id="selectMyAttendanceVo"
+		parameterType="kh.projectfinal.administrative.Page"
+		resultType="kh.projectfinal.administrative.AttendanceVo">
+		select * from (
+		select rownum rno, m.* from
+		(
+		select paper_no,
+		title, date_write from attendance_info
+		where
+		(paper_no like '%${findStr}%'
+		or
+		title like '%${findStr}%'
+		or date_write
+		like '%${findStr}%') and state =
+		${state} and emp_no = ${empNo}
+		order by paper_no desc
+		) m
+		) where rno
+		between #{startNo} and #{endNo}
+	</select>
+
+	<select id="selectMyApprovalVo"
+		parameterType="kh.projectfinal.administrative.Page"
+		resultType="kh.projectfinal.administrative.ApprovalVo">
+		select * from (
+		select rownum rno, m.* from
+		(
+		select paper_no,title,date_write from draft_info
+	    where (paper_no like '%${findStr}%' or title like '%${findStr}%' or date_write like '%${findStr}%')
+	    and emp_no = ${empNo}
+		UNION
+		select paper_no,title,date_write from stuff_info
+		where (paper_no like '%${findStr}%' or title like '%${findStr}%' or date_write like '%${findStr}%')
+	    and emp_no = ${empNo}
+		UNION
+		select paper_no,title,date_write from attendance_info
+		where (paper_no like '%${findStr}%' or title like '%${findStr}%' or date_write like '%${findStr}%')
+	    and emp_no = ${empNo}
+		order by
+		paper_no desc
+		) m
+		) where
+		rno between #{startNo} and #{endNo}
+	</select>
+
+	<select id="getTotListSizeMyApproval"
+		parameterType="kh.projectfinal.administrative.Page" resultType="int">
+		select count(paper_no) from (
+	    select paper_no from draft_info
+	    where (paper_no like '%${findStr}%' or title like '%${findStr}%' or date_write like '%${findStr}%')
+	    and emp_no = ${empNo}
+	    UNION
+	    select paper_no from stuff_info
+	    where (paper_no like '%${findStr}%' or title like '%${findStr}%' or date_write like '%${findStr}%')
+	    and emp_no = ${empNo}
+	    UNION
+	    select paper_no from attendance_info
+	    where (paper_no like '%${findStr}%' or title like '%${findStr}%' or date_write like '%${findStr}%')
+	    and emp_no = ${empNo}
+		)
+	</select>
+
+	<select id="selectWaitApprovalVo"
+		parameterType="kh.projectfinal.administrative.Page"
+		resultType="kh.projectfinal.administrative.ApprovalVo">
+		select * from (
+		select rownum rno, m.* from
+		(
+		SELECT paper_no,title,date_write FROM draft_info WHERE (paper_no like '%${findStr}%' or title like '%${findStr}%' or date_write like '%${findStr}%')
+		and ((gm = ${empNo} AND dm IS null AND state = 1) OR (dm = ${empNo} AND ceo IS null AND state = 1) OR (ceo = ${empNo} AND state = 1))
+		UNION 
+		SELECT paper_no,title,date_write FROM stuff_info WHERE (paper_no like '%${findStr}%' or title like '%${findStr}%' or date_write like '%${findStr}%')
+		and ((gm = ${empNo} AND dm IS null AND state = 1) OR (dm = ${empNo} AND ceo IS null AND state = 1) OR (ceo = ${empNo} AND state = 1))
+		UNION 
+		SELECT paper_no,title,date_write FROM attendance_info WHERE (paper_no like '%${findStr}%' or title like '%${findStr}%' or date_write like '%${findStr}%')
+		and ((gm = ${empNo} AND dm IS null AND state = 1) OR (dm = ${empNo} AND ceo IS null AND state = 1) OR (ceo = ${empNo} AND state = 1))
+		order by paper_no desc
+		) m
+		) where
+		rno between #{startNo} and #{endNo}
+	</select>
+	
+	<select id="getTotListSizeWaitApproval"
+		parameterType="kh.projectfinal.administrative.Page" resultType="int">
+		select count(paper_no) from (
+		SELECT paper_no,title,date_write FROM draft_info WHERE (paper_no like '%${findStr}%' or title like '%${findStr}%' or date_write like '%${findStr}%')
+		and ((gm = ${empNo} AND dm IS null AND state = 1) OR (dm = ${empNo} AND ceo IS null AND state = 1) OR (ceo = ${empNo} AND state = 1))
+		UNION 
+		SELECT paper_no,title,date_write FROM stuff_info WHERE (paper_no like '%${findStr}%' or title like '%${findStr}%' or date_write like '%${findStr}%')
+		and ((gm = ${empNo} AND dm IS null AND state = 1) OR (dm = ${empNo} AND ceo IS null AND state = 1) OR (ceo = ${empNo} AND state = 1))
+		UNION 
+		SELECT paper_no,title,date_write FROM attendance_info WHERE (paper_no like '%${findStr}%' or title like '%${findStr}%' or date_write like '%${findStr}%')
+		and ((gm = ${empNo} AND dm IS null AND state = 1) OR (dm = ${empNo} AND ceo IS null AND state = 1) OR (ceo = ${empNo} AND state = 1))
+		)
+	</select>
+	
+<!-- 	<insert id="insertDraftVo" parameterType="DraftVo"> -->
+<!-- 		insert into draft_info(paper_no, emp_no, title, purpose, subject, remark, date_write, attach, staff, gm, dm, ceo, state) -->
+<!-- 		values (PAPER_NO_SEQ.nextval, #{empNo}, #{title}, #{purpose}, #{subject}, #{remark}, sysdate, #{attach}, #{staff}, #{gm}, #{dm}, #{ceo}, #{state}) -->
+<!-- 	</insert> -->
+	
+<!-- 	<update id="updateDraftVo" parameterType="DraftVo"> -->
+<!-- 		update draft_info set -->
+<!-- 		title = #{title}, purpose = #{purpose}, subject = #{subject}, date_write = sysdate, attach = #{attach}, staff = #{staff}, gm = #{gm}, dm = #{dm}, ceo = #{ceo}, state = #{state} -->
+<!-- 		where paper_no = #{paper_no} -->
+<!-- 	</update> -->
+
+<!-- 	<insert id="insertStuffVo" parameterType="StuffVo"> -->
+<!-- 		insert into stuff_info(paper_no, emp_no, title, subject, price, remark, date_write, attach, staff, gm, dm, ceo, state) -->
+<!-- 		values (PAPER_NO_SEQ.nextval, #{empNo}, #{title}, #{subject}, #{price} #{remark}, sysdate, #{attach}, #{staff}, #{gm}, #{dm}, #{ceo}, #{state}) -->
+<!-- 	</insert> -->
+
+<!-- 	<update id="updateStuffVo" parameterType="StuffVo"> -->
+<!-- 		update stuff_info set -->
+<!-- 		title = #{title}, subject = #{subject}, price = #{price}, date_write = sysdate, attach = #{attach}, staff = #{staff}, gm = #{gm}, dm = #{dm}, ceo = #{ceo}, state = #{state} -->
+<!-- 		where paper_no = #{paper_no} -->
+<!-- 	</update> -->
+
+<!-- 	<insert id="insertAttendanceVo" parameterType="AttendanceVo"> -->
+<!--         insert into draft_info(paper_no, emp_no, from_year, from_month, from_day, to_year, to_month, to_day, type, title, subject, remark, date_write, attach, staff, gm, dm, ceo, state) -->
+<!-- 		values (PAPER_NO_SEQ.nextval, #{empNo}, #{from_year}, #{from_month}, #{from_day}, #{to_year}, #{to_month}, #{to_day}, #{type}, #{title}, #{subject}, #{remark}, sysdate, #{attach}, #{staff}, #{gm}, #{dm}, #{ceo}, #{state}) -->
+<!-- 	</insert> -->
+	
+<!-- 	<update id="updateAttendanceVo" parameterType="AttendanceVo"> -->
+<!-- 		update draft_info set -->
+<!-- 		title = #{title}, from_year = #{from_year}, from_month = #{from_month}, from_day = #{from_day}, to_year = #{to_year}, to_month = #{to_month}, to_day = #{to_day}, type = #{type}, subject = #{subject}, date_write = sysdate, attach = #{attach}, staff = #{staff}, gm = #{gm}, dm = #{dm}, ceo = #{ceo}, state = #{state} -->
+<!-- 		where paper_no = #{paper_no} -->
+<!-- 	</update> -->
+	
+</mapper>

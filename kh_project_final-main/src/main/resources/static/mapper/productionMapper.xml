@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+   <mapper namespace="kh.projectfinal.production.ProductionMapper">
+   
+   <select id="warehousingSelectVo" resultType="ProductionVo">
+
+   select p.product_index,p.product_name,w.warehousing_number,w.warehousing_price,c.company_index,c.Company_name,w.time  from  Warehousing w,Company c,Product p
+where w.Product_index=P.Product_index AND w.Company_index=c.Company_index
+   </select>
+   
+   <select id="releaseSelectVo" resultType="ProductionVo">
+   select p.product_index,p.product_name,r.release_number,r.release_price,r.disuse_number,r.refurbish_number,c.company_index,c.Company_name,r.time  from  Release r,Company c,Product p
+ where r.Product_index=p.Product_index AND r.Company_index=c.Company_index   
+   </select>
+   
+   <select id="stockSelectVo" resultType="ProductionVo">
+   select p.product_index,p.product_name,s.stock_number,s.stock_price,s.time  from  Stock s,Product p
+ where s.Product_index=p.Product_index   
+   </select>
+   
+   <insert id="warehousingInsertVo" parameterType="BoardVo">
+   insert p.product_index,p.product_name,w.warehousing_number,w.warehousing_price,c.company_index,c.Company_name,w.time  from  Warehousing w,Company c,Product p
+where w.Product_index=P.Product_index AND w.Company_index=c.Company_index
+   </insert>
+   </mapper>

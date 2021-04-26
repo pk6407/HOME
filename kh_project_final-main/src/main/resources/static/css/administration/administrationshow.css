@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+#approval .btns {
+	text-align: center;
+}
+
+#approval .btns>input {
+	border: 1px solid #ddc;
+	border-radius: 10px;
+}
+
+#approval .result_msg {
+	margin: 60px auto;
+	width: 400px;
+	border: 2px solid #f55;
+	border-radius: 20px;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	box-shadow: 3px 3px 7px #999;
+}
+
+#approval {
+	width: 100%;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+
+#approval #frm_approval input {
+	border: 1px solid #bbb;
+	border-radius: 10px;
+}
+
+#approval #frm_approval>div {
+	display: inline-block;
+	float: right;
+}
+
+#approval .title {
+	margin-top: 6px;
+	background-color: #447294;
+	padding: 4px 0;
+	color: #fff;
+}
+
+#approval span {
+	display: inline-block;
+}
+
+#approval .no {
+	width: 70px;
+}
+
+#approval .sub {
+	width: 270px;
+}
+
+#approval .name {
+	width: 180px;
+}
+
+#approval .date {
+	width: 240px;
+}
+
+#approval .appr {
+	width: 120px;
+}
+
+#approval .type {
+	width: 120px;
+}
+
+#approval .items>div {
+	line-height: 25px;
+}
+
+#approval .items>div:hover {
+	background-color: #bbb;
+	cursor: pointer;
+}
+
+#approval .items>div:last-child {
+	border-bottom: 2px solid #aaa;
+	margin-bottom: 10px;
+}
+
+#approval .paging {
+	text-align: center;
+}
+
+#approval .paging>input {
+	border: 1px solid #ddc;
+	border-radius: 10px;
+}
+
+#approval .paging>input:hover {
+	cursor: pointer;
+}
